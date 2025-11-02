@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NLT Productions Wedding Agreement</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>NLT Productions Wedding Agreement Generator</h1>
+  
+  <form id="contractForm">
+    <h2>Client Details</h2>
+    <label>Client Name:</label>
+    <input type="text" id="clientName" required>
+    
+    <label>Client Address:</label>
+    <input type="text" id="clientAddress" required>
+    
+    <label>Client Phone/Email:</label>
+    <input type="text" id="clientContact" required>
+
+    <h2>Event Selection</h2>
+    <label>Select Events:</label>
+    <div id="eventSelection">
+      <label><input type="checkbox" value="Haldi & Mehendi"> Haldi & Mehendi</label><input type="date" class="eventDate">
+      <label><input type="checkbox" value="Marriage Day"> Marriage Day</label><input type="date" class="eventDate">
+      <label><input type="checkbox" value="Reception Day"> Reception Day</label><input type="date" class="eventDate">
+      <label><input type="checkbox" value="Pre-Wedding Shoot"> Pre-Wedding Shoot</label><input type="date" class="eventDate">
+      <label><input type="checkbox" value="Post-Wedding Shoot"> Post-Wedding Shoot</label><input type="date" class="eventDate">
+    </div>
+
+    <h2>Package Selection</h2>
+    <select id="mainPackage" required>
+      <option value="" disabled selected>Select Main Package</option>
+      <option value="Bride Side Package">Bride Side Package - Rs. 65,000</option>
+      <option value="Groom Side Package">Groom Side Package - Rs. 85,000</option>
+      <option value="Both Side Package">Both Side Package - Rs. 1,20,000</option>
+      <option value="Premium Package">Premium Package - Short Distance Rs. 1,35,000 / Long Distance Rs. 1,45,000</option>
+    </select>
+
+    <label>Advance Payment (NPR):</label>
+    <input type="text" id="advancePayment" required>
+
+    <label>Payment Method:</label>
+    <input type="text" id="paymentMethod" placeholder="Bank Transfer, Cash, eSewa, Khalti, etc." required>
+
+    <label>Additional Notes:</label>
+    <textarea id="additionalNotes" placeholder="Special requests or notes"></textarea>
+    
+    <button type="button" onclick="generateContract()">Generate Contract</button>
+  </form>
+
+  <hr>
+
+  <div id="contractPreview">
+    <h2>Contract Preview</h2>
+    <div id="contractContent"></div>
+    <button onclick="downloadPDF()">Download PDF</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

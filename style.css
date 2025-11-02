@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  form input, form select, form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  #eventSelection {
+    margin-bottom: 15px;
+  }
+  
+  #eventSelection input[type="date"] {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #contractPreview {
+    margin-top: 20px;
+  }
+  
+  #contractContent {
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    font-family: "Times New Roman", serif;
+  }
+  
+  #contractPreview button {
+    margin-top: 10px;
+    background-color: green;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
